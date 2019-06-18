@@ -152,3 +152,8 @@ EMAIL_PORT = 587
 EMAIL_HOST_USER = 'lee@RA2.io'
 EMAIL_HOST_PASSWORD = 'Redlined2000'
 EMAIL_USE_TLS = True
+
+try:
+    from .local_settings import *
+except ImportError:
+    pass
